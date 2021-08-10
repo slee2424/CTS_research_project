@@ -310,6 +310,280 @@ $(document).ready(function () {
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<title>
+index.utf8
+</title>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+<!-- tabsets -->
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+<!-- code folding -->
+</head>
+<body>
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<pre><code>&lt;div class=&quot;navbar-header&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar&quot;&gt;
+    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;a class=&quot;navbar-brand&quot; href=&quot;index.html&quot;&gt;CTS research project&lt;/a&gt;
+&lt;/div&gt;
+&lt;div id=&quot;navbar&quot; class=&quot;navbar-collapse collapse&quot;&gt;
+  &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+    &lt;li&gt;</code></pre>
+<a href="index.html">Home</a>
+</li>
+<li>
+<a href="about.html">About</a>
+</li>
+<pre><code>  &lt;/ul&gt;
+  &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+    
+  &lt;/ul&gt;
+&lt;/div&gt;&lt;!--/.nav-collapse --&gt;</code></pre>
+</div>
+<!--/.container -->
+</div>
+<!--/.navbar -->
+<div id="header" class="fluid-row">
+
+</div>
+<p>
+&lt;!DOCTYPE html&gt;
+</p>
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 <meta name="author" content="Jun Lee" />
 <title>
 CTS risk of death prediction research project
@@ -471,7 +745,8 @@ Jun Lee
 <div id="introduction" class="section level1">
 <h1>
 <ol style="list-style-type: decimal">
-<li>Introduction
+<li>
+Introduction
 </h1>
 <p>
 This project is an external research study for the City of Hope conducted by the USC Public Health Data Science department. The California Teachers Study (CTS) data, with a combination of OSHPD hospitalization records and the survey records are the dataset to analyze in this project. CTS was founded in 1995 with 133,477 teachers, administrators, school nurses, and other members who agreed to provide their health and behaviors to CTS researchers. In this study, hospitalizations of CTS participants from 2000 through 2015 are used. The main objective of the project is to predict the short-term risk of death based on prior in-patient hospitalization and data which includes subject-specific factors such as baseline characteristics from the CTS questionnaires and hospitalization information.
@@ -499,7 +774,8 @@ Deermine whether there are any spatial trends in hospitalization-related deaths.
 <div id="methods" class="section level1">
 <h1>
 <ol start="2" style="list-style-type: decimal">
-<li>Methods
+<li>
+Methods
 </h1>
 <p>
 Initial dataset is a combination of the hospitalization data and survey data of CTS records, provided by the City of Hope. To answer the specific aims, different analyzing tools and prediction methods are used. Skimming total of 172 variables of the raw dataset, data exploration includes summary statistics, graphical display and plotting, cleaning process, and re-creating features. Data cleaning is the most important part in the data exploration. Eliminating NAs and appropriate amount of invalid observations is conducted to build an accurate machine learning training data. Data cleaning process also includes average imputation, clustering into moderate size of groups, and re-creating more analyzable variables. A couple of machine learning methods such as logistic regression and Random Forest are used for feature evaluation and selection in the exploration step. These modeling methods check if each individual variable is an appropriate feature to be in the final model.
@@ -1111,7 +1387,8 @@ Variable analysis 9: Spatial trends in hospitalization-related deaths (facility 
 <div id="ccs_code---primary-diagnosis-primary-procedure" class="section level4">
 <h4>
 <ol style="list-style-type: decimal">
-<li>CCS_code - primary diagnosis, primary procedure
+<li>
+CCS_code - primary diagnosis, primary procedure
 </h4>
 <p>
 Primary diagnosis ccs code is a good feature to train a model but the secondary and below ccs code variables includes too many missing values that could result in shrinking the size of eligible data, if included in the model. Same condition applies to all procedure ccs code as they also has too many missing values.
@@ -1157,7 +1434,8 @@ Primary diagnosis ccs code is a good feature to train a model but the secondary 
 <div id="admission-type" class="section level4">
 <h4>
 <ol start="2" style="list-style-type: decimal">
-<li>Admission type
+<li>
+Admission type
 </h4>
 <p>
 Not included in the final model - admission_typ shows no significant association
@@ -1197,7 +1475,8 @@ Not included in the final model - admission_typ shows no significant association
 <div id="source-admission-code" class="section level4">
 <h4>
 <ol start="3" style="list-style-type: decimal">
-<li>source admission code
+<li>
+source admission code
 </h4>
 <p>
 It does not show significant association as only a handful of source admission codes shows good association whereas some codes whith large portion of patients does not show significant association
@@ -1380,7 +1659,8 @@ It does not show significant association as only a handful of source admission c
 <div id="payer-category-code" class="section level4">
 <h4>
 <ol start="4" style="list-style-type: decimal">
-<li>Payer category code
+<li>
+Payer category code
 </h4>
 <p>
 Only group 1,2,3 and 4 has a meaningful size of patients. Drop 0 ( invalide patients) from the data to see more clear association - shows significant association
@@ -1429,7 +1709,8 @@ Only group 1,2,3 and 4 has a meaningful size of patients. Drop 0 ( invalide pati
 <div id="payer-coverage-type" class="section level4">
 <h4>
 <ol start="5" style="list-style-type: decimal">
-<li>Payer coverage type
+<li>
+Payer coverage type
 </h4>
 <p>
 It shows significant association
@@ -1468,7 +1749,8 @@ It shows significant association
 <div id="total-charges-amount" class="section level4">
 <h4>
 <ol start="6" style="list-style-type: decimal">
-<li>Total charges amount
+<li>
+Total charges amount
 </h4>
 <p>
 It shows significant association. Cleaned data shows less significant association - presumably because eliminating patients with 0 total charges takes away too many numbers of data of patients who are healthy enought to not to receive serious treatments
@@ -1526,7 +1808,8 @@ It shows significant association. Cleaned data shows less significant associatio
 <div id="patient-care-type" class="section level4">
 <h4>
 <ol start="7" style="list-style-type: decimal">
-<li>Patient care type
+<li>
+Patient care type
 </h4>
 <p>
 It shows significant association
@@ -1568,7 +1851,8 @@ It shows significant association
 <div id="patient-disposition-code" class="section level4">
 <h4>
 <ol start="8" style="list-style-type: decimal">
-<li>Patient disposition code
+<li>
+Patient disposition code
 </h4>
 <p>
 It shows significant association. Although one of the code category is “died” which directly indicates the deceased status, neither the variable nor the “died” category is eliminated because rest of the data provides significantly important information for the prediction and deceased population cannot be largely eliminated. Fortunately “died” category in this variable only accounts around 4% of total deceased population.
@@ -1666,7 +1950,8 @@ It shows significant association. Although one of the code category is “died�
 <div id="variable-importance-of-baseline-characteristics-from-the-cts-questionnaires" class="section level4 tabset">
 <h4 class="tabset">
 <ol style="list-style-type: decimal">
-<li>variable importance of baseline characteristics from the CTS questionnaires
+<li>
+variable importance of baseline characteristics from the CTS questionnaires
 </h4>
 <p>
 Based on the variable importance, variables with Mean Decrease Gini score of 1000 and above in each feature categories are selected and cleaned for the final prediction model feature selection.
@@ -1759,7 +2044,8 @@ Based on the variable importance, variables with Mean Decrease Gini score of 100
 <div id="other-survey-data-exploration-and-clean-up" class="section level4 tabset">
 <h4 class="tabset">
 <ol start="2" style="list-style-type: decimal">
-<li>Other survey data exploration and clean up
+<li>
+Other survey data exploration and clean up
 </h4>
 <div id="ses-quartile" class="section level5">
 <h5>
@@ -1943,7 +2229,8 @@ Based on the variable importance, variables with Mean Decrease Gini score of 100
 <div id="result" class="section level1">
 <h1>
 <ol start="3" style="list-style-type: decimal">
-<li>Result
+<li>
+Result
 </h1>
 <div id="random-forest-prediction-model-by-different-time-window" class="section level2 tabset">
 <h2 class="tabset">
@@ -1961,7 +2248,8 @@ Variable importance score was measured with mean decrease gini to see which vari
 <div id="deceased-in-total-study-periods" class="section level3">
 <h3>
 <ol style="list-style-type: decimal">
-<li>Deceased in total study periods
+<li>
+Deceased in total study periods
 </h3>
 <p>
 RandomForest model with target variable: deceased
@@ -1983,7 +2271,8 @@ RandomForest model with target variable: deceased
 <div id="deceased-in-1-month" class="section level3">
 <h3>
 <ol start="2" style="list-style-type: decimal">
-<li>Deceased in 1 month
+<li>
+Deceased in 1 month
 </h3>
 <p>
 RandomForest model with target variable: deceased_in30after_admission
@@ -2005,7 +2294,8 @@ RandomForest model with target variable: deceased_in30after_admission
 <div id="deceased-in-6-months" class="section level3">
 <h3>
 <ol start="2" style="list-style-type: decimal">
-<li>Deceased in 6 months
+<li>
+Deceased in 6 months
 </h3>
 <p>
 RandomForest model with target variable: deceased_in180_after_admission
@@ -2027,7 +2317,8 @@ RandomForest model with target variable: deceased_in180_after_admission
 <div id="deceased-in-1-year" class="section level3">
 <h3>
 <ol start="3" style="list-style-type: decimal">
-<li>Deceased in 1 year
+<li>
+Deceased in 1 year
 </h3>
 <p>
 RandomForest model with target variable: deceased_in365_after_admission
@@ -2049,7 +2340,8 @@ RandomForest model with target variable: deceased_in365_after_admission
 <div id="deceased-in-3-years" class="section level3">
 <h3>
 <ol start="4" style="list-style-type: decimal">
-<li>Deceased in 3 years
+<li>
+Deceased in 3 years
 </h3>
 <p>
 RandomForest model with target variable: deceased_in1095_after_admission
@@ -2071,7 +2363,8 @@ RandomForest model with target variable: deceased_in1095_after_admission
 <div id="deceased-in-5-years" class="section level3">
 <h3>
 <ol start="5" style="list-style-type: decimal">
-<li>Deceased in 5 years
+<li>
+Deceased in 5 years
 </h3>
 <p>
 RandomForest model with target variable: deceased_in1825_after_admission
@@ -2098,7 +2391,8 @@ RandomForest model with target variable: deceased_in1825_after_admission
 <div id="deceased-in-1-month-1" class="section level3">
 <h3>
 <ol style="list-style-type: decimal">
-<li>Deceased in 1 month
+<li>
+Deceased in 1 month
 </h3>
 <p>
 RandomForest model with target variable: deceased_in30after_admission
@@ -2143,7 +2437,8 @@ RandomForest model with target variable: deceased_in180_after_admission
 <div id="conclusion" class="section level1">
 <h1>
 <ol start="4" style="list-style-type: decimal">
-<li>Conclusion
+<li>
+Conclusion
 </h1>
 <p>
 The final prediction model targeting risk of death in different time window after hospitalization provided clear findings. First, each model by time window yielded prediction accuracy around 90%. Because all accuracy rates and error rates were computed based on the prediction result of the test data set, these figures are objective indicators of performance of the model. With the same types of new patients’ data, these models can produce moderately accurate prediction.
@@ -2166,27 +2461,48 @@ Lastly and interestingly, in extremely longer term risk prediction, menopausal s
 <p>
 One additional point that should be addressed in the study is relationship between cause of death code and diagnosis icd-9 codes. This project experienced difficulty utilizing such an important variables. However, it is believed that combining cause of death code and diagnosis icd-9 code with accurately matching level of icd code use will open possibility of creating more sophisticated machine learning prediction model.
 </p>
-</div></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
 </ol>
 </div>
 <script>
@@ -2210,6 +2526,43 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
     $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+<!-- code folding -->
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+</html>
+</div>
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
   });
 });
 </script>

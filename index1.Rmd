@@ -1,0 +1,10 @@
+---
+title: 'CTS research project - risk of death prediction '
+author: "Jun Lee"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+---

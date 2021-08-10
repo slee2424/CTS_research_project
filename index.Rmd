@@ -1,5 +1,5 @@
 ---
-title: 'CTS research project - risk of death prediction '
+title: 'CTS research project - risk of death prediction'
 author: "Jun Lee"
 output:
   html_document:
@@ -8,3 +8,8 @@ output:
   pdf_document:
     toc: yes
 ---
+
+```{r}
+library(dplyr)
+```
+

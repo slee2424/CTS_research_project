@@ -10,4 +10,5 @@ navbar:
 
 output:
   html_document:
- 
+  theme: cosmo
+  
